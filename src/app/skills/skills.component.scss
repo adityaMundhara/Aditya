@@ -1,0 +1,49 @@
+@import './../../assets/styles/variables.scss';
+
+:host {
+    height: 100%;
+    width: 100%;
+}
+
+.rightBorder {
+    border-right: 1px solid rgba(255, 255, 255, .07);
+}
+
+.commonPadding {
+    padding: 0px 20px 0 20px;
+}
+.widthControl{
+    width:100%;
+    height: 100%;
+}
+.defaultBar {
+    background-color:$matrix-green;
+    height:3px;
+}
+.nonDefault {
+    background-color:$white;
+    height:3px;
+}
+.btn{
+    display: block;
+    position: absolute;
+    border:2px solid #4bffa5;
+    background-color: $black;
+    color:$matrix-green;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height:50%;
+    width:25%;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.btn:hover{
+        box-shadow: 0px 0px 30px 0px rgba(75, 255, 165, 0.7);
+    }
+
+.relativeDisp{
+    position: relative;
+}

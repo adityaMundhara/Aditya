@@ -1,0 +1,44 @@
+@import './../../assets/styles/variables.scss';
+
+:host{
+    background-color: $black;
+    height: 100%;
+    width: 100%;
+}
+.myPhoto{
+    background-image: url(./../../assets/aditya.jpg);  
+    height:100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    clip-path:polygon(31% 0,100% 25%,61% 100%,0 93%);
+    background-position-y:center;
+    background-position-x:40% ;
+    filter: grayscale(1);
+}
+.fontStyle{
+    font-size: 20px;
+    font-weight: 300;
+    line-height:23px;
+}
+.styleDiv{
+    position: relative;
+    top:85%;
+    left:-10%;
+}
+
+.greenFont{
+    color:$matrix-green;
+}
+.fontAwesomesize{
+    padding:0px 5% 0px 0px;
+    font-size:25px;
+}
+.backgroundDiv{
+    margin:0px 5px;
+}
+
+@media screen and (max-width: 480px) {
+    .styleDiv {
+        top:70%;
+        }
+      }

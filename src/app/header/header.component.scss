@@ -1,0 +1,30 @@
+@import './../../assets/styles/variables.scss';
+.fixName{
+    position: absolute;
+}
+.name{
+    color: $gray;
+    font-size: 30px;
+    text-decoration: none;
+    line-height:30px;
+    cursor: pointer;
+    .rName{
+        .bolder-white{
+            color:$matrix-green;
+        }
+    }
+}
+.bolder-green{
+    color:$matrix-green;
+}
+.greenButton{
+    @extend .bolder-green;
+}
+::ng-deep .mat-menu-panel{
+        background: #858585 !important;
+    }
+@media screen and (max-width: 480px) {
+    .name {
+          font-size: 20px;
+        }
+      }

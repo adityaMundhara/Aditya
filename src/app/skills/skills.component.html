@@ -1,0 +1,67 @@
+<div fxFlex fxLayout="column">
+<div fxFlex=80 fxLayout="row">
+    <div fxFlex=50 class="rightBorder commonPadding" fxLayout="column" fxLayoutAlign="space-around start">
+        <div class="widthControl" fxFlex fxLayout="column">
+            <div fxFlex=35>Angular5+ ( {{angular}}% )</div>
+            <div fxFlex fxLayout="row">
+                <div class="defaultBar" [fxFlex]="angular"></div>
+                <div class="nonDefault" fxFlex></div>
+            </div>
+        </div>
+        <div class="widthControl" fxFlex fxLayout="column">
+            <div fxFlex=35>Typescript/Javascript ( {{typescript}}% )</div>
+            <div fxFlex fxLayout="row">
+                <div class="defaultBar" [fxFlex]="typescript"></div>
+                <div class="nonDefault" fxFlex></div>
+            </div>
+        </div>
+        <div class="widthControl" fxFlex fxLayout="column">
+            <div  fxFlex=35>D3.js/Highcharts.js ( {{d3}}% )</div>
+            <div fxFlex fxLayout="row">
+                <div class="defaultBar" [fxFlex]="d3"></div>
+                <div class="nonDefault" fxFlex></div>
+            </div>
+        </div>
+        <div class="widthControl" fxFlex fxLayout="column">
+            <div fxFlex=35>Ngrx Store ( {{ngrx}}% )</div>
+            <div fxFlex fxLayout="row">
+                <div class="defaultBar" [fxFlex]="ngrx"></div>
+                <div class="nonDefault" fxFlex></div>
+            </div>
+        </div>
+    </div>
+    <div class="commonPadding" fxFlex=50 fxLayout="column" fxLayoutAlign="space-around start">
+        <div class="widthControl" fxFlex fxLayout="column">
+            <div fxFlex=35>Node.js with Express.js/Koa.js ( {{node}}% )</div>
+            <div fxFlex fxLayout="row">
+                <div class="defaultBar" [fxFlex]="node"></div>
+                <div class="nonDefault" fxFlex></div>
+            </div>
+        </div>
+        <div class="widthControl" fxFlex fxLayout="column">
+            <div fxFlex=35>Postgres SQL / Influx SQL ( {{postgres}}% )</div>
+            <div fxFlex fxLayout="row">
+                <div class="defaultBar" [fxFlex]="postgres"></div>
+                <div class="nonDefault" fxFlex></div>
+            </div>
+        </div>
+        <div class="widthControl" fxFlex fxLayout="column">
+            <div fxFlex=35>Docker ( {{docker}}% )</div>
+            <div fxFlex fxLayout="row">
+                <div class="defaultBar" [fxFlex]="docker"></div>
+                <div class="nonDefault" fxFlex></div>
+            </div>
+        </div>
+        <div class="widthControl" fxFlex fxLayout="column">
+            <div fxFlex=35>C++ ( {{cpp}}% )</div>
+            <div fxFlex fxLayout="row">
+                <div class="defaultBar" [fxFlex]="cpp"></div>
+                <div class="nonDefault" fxFlex></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div fxFlex class="relativeDisp">
+    <button class="btn"(click)="downloadRes()">Download CV</button>
+</div>
+</div>
