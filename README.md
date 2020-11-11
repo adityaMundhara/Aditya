@@ -1,3 +1,1 @@
-# resume
-My resume deployed in gitpages !!
-https://adityamundhara.github.io/resume/
+https://adityamundhara.github.io/me/
