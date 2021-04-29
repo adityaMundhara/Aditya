@@ -5,7 +5,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --base-href 'https://adityamundhara.github.io/me'",
+    "build": "ng build --base-href 'https://adityamundhara.github.io/me/'",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
