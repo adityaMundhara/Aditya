@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 
 @Component({
@@ -6,7 +6,7 @@ import { Title } from '@angular/platform-browser';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   constructor(titleService: Title) {
     var i = 0;
     var words: string[] = [
@@ -29,5 +29,15 @@ export class AppComponent {
       titleService.setTitle(words[i]);
       i++;
     }, 1500);
+  }
+  ngOnInit(){
+    window.addEventListener("mousemove", function (e) {
+      var to_append = Array.from(document.getElementsByClassName('cursor')) as Array<HTMLElement>;
+      for(let a  of to_append){
+        a.style.left = (e.clientX)+'px';
+        a.style.top = (e.clientY)+'px';
+      }    
+
+    });
   }
 }

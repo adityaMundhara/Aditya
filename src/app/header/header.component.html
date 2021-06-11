@@ -7,9 +7,9 @@
     </span>
   </a>
   <div fxFlex fxLayoutAlign="end center" fxLayoutGap="10px">
-    <button mat-button *ngIf="router.url==='/aditya'" [routerLink]="'/skills'"><mat-icon style="font-size: 20px;" class="greenButton">engineering</mat-icon>Skills</button>
-    <button mat-button *ngIf="router.url==='/skills'" [routerLink]="'/aditya'"><mat-icon style="font-size: 20px;" class="greenButton">home</mat-icon>Home</button>
-    <button mat-button [matMenuTriggerFor]="menu"><mat-icon style="font-size: 20px;" class="greenButton">more_vert</mat-icon>Works</button>
+    <button mat-button *ngIf="router.url==='/aditya'" [routerLink]="'/skills'" class="button-hover"><mat-icon style="font-size: 20px;" class="greenButton">engineering</mat-icon>Skills</button>
+    <button mat-button *ngIf="router.url==='/skills'" [routerLink]="'/aditya'" class="button-hover"><mat-icon style="font-size: 20px;" class="greenButton">home</mat-icon>Home</button>
+    <button mat-button [matMenuTriggerFor]="menu"  class="button-hover"><mat-icon style="font-size: 20px;" class="greenButton">more_vert</mat-icon>Works</button>
     <mat-menu #menu="matMenu">
     <a mat-menu-item href="https://adityamundhara.github.io/sorting_visualizer/" target="_blank" class="bolder-green">Sorting Visualizer</a>
     <a mat-menu-item href="https://adityamundhara.github.io/asteroids/" target="_blank" class="bolder-green">Asteroids</a>
